@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.1</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <Platforms>AnyCPU</Platforms>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Description>A collection of all the DateTime precision extension methods</Description>
+        <Version Condition="'$(BUILD_VERSION)' == ''">2.1.0</Version>
+        <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
+        <AssemblyName>Soenneker.Extensions.DateTime.Suite</AssemblyName>
+        <PackageId>Soenneker.Extensions.DateTime.Suite</PackageId>
+        <PackageTags>extensions datetime suite timezone date time zone quarter minute day week month year conversion datetimeextension extension csharp dotnet c# .net</PackageTags>
+        <Copyright>Copyright © 2024 Jake Soenneker</Copyright>
+        <Authors>Jake Soenneker</Authors>
+        <Company>https://soenneker.com</Company>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <IsPackable>true</IsPackable>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/soenneker/soenneker.extensions.datetime.suite</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/soenneker/soenneker.extensions.datetime.suite</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryBranch>main</RepositoryBranch>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <LangVersion>latest</LangVersion>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>icon.png</PackageIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\CONTRIBUTING.md" Link="CONTRIBUTING.md" />
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+        <None Include="..\LICENSE" Pack="true" PackagePath="\" />
+        <None Include="..\icon.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Soenneker.Extensions.DateTime.Quarter" Version="2.1.1" />
+      <PackageReference Include="Soenneker.Extensions.DateTime.Day" Version="2.1.2" />
+      <PackageReference Include="Soenneker.Extensions.DateTime.Hour" Version="2.1.1" />
+      <PackageReference Include="Soenneker.Extensions.DateTime.Month" Version="2.1.1" />
+      <PackageReference Include="Soenneker.Extensions.DateTime.Week" Version="2.1.6" />
+      <PackageReference Include="Soenneker.Extensions.DateTime.Year" Version="2.1.4" />
+    </ItemGroup>
+</Project>
