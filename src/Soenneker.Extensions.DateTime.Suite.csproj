@@ -14,7 +14,7 @@
         <AssemblyName>Soenneker.Extensions.DateTime.Suite</AssemblyName>
         <PackageId>Soenneker.Extensions.DateTime.Suite</PackageId>
         <PackageTags>extensions datetime suite timezone date time zone quarter minute day week month year conversion datetimeextension extension csharp dotnet c# .net</PackageTags>
-        <Copyright>Copyright © 2024-2025 Jake Soenneker</Copyright>
+        <Copyright>Copyright © 2024-2026 Jake Soenneker</Copyright>
         <Authors>Jake Soenneker</Authors>
         <Company>https://soenneker.com</Company>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
