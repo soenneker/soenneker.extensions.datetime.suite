@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
@@ -32,10 +31,11 @@
         <LangVersion>latest</LangVersion>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageIcon>icon.png</PackageIcon>
-    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
         <PackageReleaseNotes Condition="'$(PACKAGE_RELEASE_NOTES)' != ''">
             $(PACKAGE_RELEASE_NOTES)
-        </PackageReleaseNotes></PropertyGroup>
+        </PackageReleaseNotes>
+    </PropertyGroup>
 
     <ItemGroup>
         <None Include="..\..\README.md" Pack="true" PackagePath="\" />
@@ -44,11 +44,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Soenneker.Extensions.DateTime.DayOfWeek" Version="4.0.1411" />
-      <PackageReference Include="Soenneker.Extensions.DateTime.Quarter" Version="4.0.1288" />
-      <PackageReference Include="Soenneker.Extensions.DateTime.Hour" Version="4.0.1303" />
-      <PackageReference Include="Soenneker.Extensions.DateTime.Month" Version="4.0.1710" />
-      <PackageReference Include="Soenneker.Extensions.DateTime.Week" Version="4.0.1573" />
-      <PackageReference Include="Soenneker.Extensions.DateTime.Year" Version="4.0.1285" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.DayOfWeek" Version="4.0.1411" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Quarter" Version="4.0.1288" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Hour" Version="4.0.1303" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Month" Version="4.0.1710" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Week" Version="4.0.1573" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Year" Version="4.0.1285" />
     </ItemGroup>
 </Project>
