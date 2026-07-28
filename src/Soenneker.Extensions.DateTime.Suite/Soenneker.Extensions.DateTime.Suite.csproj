@@ -46,7 +46,7 @@
     <ItemGroup>
         <PackageReference Include="Soenneker.Extensions.DateTime.DayOfWeek" Version="4.0.1437" />
         <PackageReference Include="Soenneker.Extensions.DateTime.Quarter" Version="4.0.1307" />
-        <PackageReference Include="Soenneker.Extensions.DateTime.Hour" Version="4.0.1321" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Hour" Version="4.0.1322" />
         <PackageReference Include="Soenneker.Extensions.DateTime.Month" Version="4.0.1728" />
         <PackageReference Include="Soenneker.Extensions.DateTime.Week" Version="4.0.1593" />
         <PackageReference Include="Soenneker.Extensions.DateTime.Year" Version="4.0.1303" />
