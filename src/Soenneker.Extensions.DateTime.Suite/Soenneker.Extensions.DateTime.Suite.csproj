@@ -44,11 +44,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Extensions.DateTime.DayOfWeek" Version="4.0.1442" />
-        <PackageReference Include="Soenneker.Extensions.DateTime.Quarter" Version="4.0.1313" />
-        <PackageReference Include="Soenneker.Extensions.DateTime.Hour" Version="4.0.1326" />
-        <PackageReference Include="Soenneker.Extensions.DateTime.Month" Version="4.0.1733" />
-        <PackageReference Include="Soenneker.Extensions.DateTime.Week" Version="4.0.1599" />
-        <PackageReference Include="Soenneker.Extensions.DateTime.Year" Version="4.0.1308" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.DayOfWeek" Version="4.0.1444" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Quarter" Version="4.0.1314" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Hour" Version="4.0.1327" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Month" Version="4.0.1734" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Week" Version="4.0.1600" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Year" Version="4.0.1309" />
     </ItemGroup>
 </Project>
