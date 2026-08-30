@@ -4,7 +4,8 @@
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.extensions.datetime.suite/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.extensions.datetime.suite/actions/workflows/codeql.yml)
 
 # ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Extensions.DateTime.Suite
-A collection of all the DateTime precision extension methods.
+
+A convenience meta-package that installs six focused `DateTime` extension packages for weekday, hour, week, month, quarter, and year operations.
 
 ## Installation
 
@@ -12,11 +13,32 @@ A collection of all the DateTime precision extension methods.
 dotnet add package Soenneker.Extensions.DateTime.Suite
 ```
 
+The suite contains no extension classes of its own. NuGet adds the included packages transitively, and your code imports the namespace for each feature it uses:
+
+```csharp
+using Soenneker.Extensions.DateTime.DayOfWeek;
+using Soenneker.Extensions.DateTime.Hour;
+using Soenneker.Extensions.DateTime.Month;
+using Soenneker.Extensions.DateTime.Quarter;
+using Soenneker.Extensions.DateTime.Week;
+using Soenneker.Extensions.DateTime.Year;
+
+System.DateTime value = DateTime.UtcNow;
+
+System.DateTime startOfMonth = value.ToStartOfMonth();
+System.DateTime nextMonday = value.ToStartOfNextDayOfWeek(DayOfWeek.Monday);
+System.DateTime endOfYear = value.ToEndOfYear();
+```
+
 ## Included packages
 
-- `Soenneker.Extensions.DateTime.DayOfWeek`
-- `Soenneker.Extensions.DateTime.Quarter`
-- `Soenneker.Extensions.DateTime.Hour`
-- `Soenneker.Extensions.DateTime.Month`
-- `Soenneker.Extensions.DateTime.Week`
-- `Soenneker.Extensions.DateTime.Year`
+| Package | Namespace | Scope |
+| --- | --- | --- |
+| `Soenneker.Extensions.DateTime.DayOfWeek` | `Soenneker.Extensions.DateTime.DayOfWeek` | Strict previous/next weekday navigation and boundaries |
+| `Soenneker.Extensions.DateTime.Hour` | `Soenneker.Extensions.DateTime.Hour` | Hour boundaries and hour formatting |
+| `Soenneker.Extensions.DateTime.Week` | `Soenneker.Extensions.DateTime.Week` | Week boundaries and navigation |
+| `Soenneker.Extensions.DateTime.Month` | `Soenneker.Extensions.DateTime.Month` | Month boundaries and navigation |
+| `Soenneker.Extensions.DateTime.Quarter` | `Soenneker.Extensions.DateTime.Quarter` | Calendar-quarter boundaries and navigation |
+| `Soenneker.Extensions.DateTime.Year` | `Soenneker.Extensions.DateTime.Year` | Year boundaries and navigation |
+
+Install an individual package instead when only one feature area is needed. This suite does not include `Soenneker.Extensions.DateTime`, `Soenneker.Extensions.DateTime.Day`, or `Soenneker.Extensions.DateTime.Nullable`.
