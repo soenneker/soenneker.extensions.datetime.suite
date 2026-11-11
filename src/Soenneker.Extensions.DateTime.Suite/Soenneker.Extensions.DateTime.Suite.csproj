@@ -48,8 +48,8 @@
     <ItemGroup>
         <PackageReference Include="Soenneker.Extensions.DateTime.DayOfWeek" Version="11.0.1525" />
         <PackageReference Include="Soenneker.Extensions.DateTime.Quarter" Version="11.0.1392" />
-        <PackageReference Include="Soenneker.Extensions.DateTime.Hour" Version="11.0.1402" />
-        <PackageReference Include="Soenneker.Extensions.DateTime.Month" Version="11.0.1810" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Hour" Version="11.0.1403" />
+        <PackageReference Include="Soenneker.Extensions.DateTime.Month" Version="11.0.1811" />
         <PackageReference Include="Soenneker.Extensions.DateTime.Week" Version="11.0.1673" />
         <PackageReference Include="Soenneker.Extensions.DateTime.Year" Version="11.0.1384" />
     </ItemGroup>
